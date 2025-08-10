@@ -133,7 +133,6 @@
       transform: scale(1.05);
     }
 
-    /* Projects */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -174,7 +173,6 @@
       color: var(--text-secondary);
     }
 
-    /* Skills */
     #skills ul {
       list-style-type: decimal;
       padding-left: 1.5rem;
@@ -203,7 +201,6 @@
       background-color: rgba(0, 229, 255, 0.1);
     }
   
-    /* Fade in + pulse animation */
     @keyframes pulseOnce {
       0% {
         transform: scale(1);
@@ -218,7 +215,11 @@
         opacity: 1;
       }
     }
-  
+    
+    html {
+  scroll-padding-top:100px;
+}
+
     #skills li.visible {
       animation: pulseOnce 0.6s ease forwards;
     }
@@ -269,7 +270,6 @@
       margin-bottom: 0.5rem;
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -287,7 +287,9 @@
     <nav>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
       <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -297,14 +299,12 @@
     <p>Data Analyst | MSc Risk Analytics | Business Intelligence</p>
     <div class="social-links">
       <a href="https://github.com/sehgal71" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <!-- GitHub SVG Icon -->
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.39-1.333-1.758-1.333-1.758-1.09-.745.083-.73.083-.73 1.205.086 1.84 1.237 1.84 1.237 1.07 1.835 2.805 1.305 3.49.997.11-.776.42-1.305.763-1.605-2.665-.3-5.466-1.335-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.124-.303-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.52 11.52 0 0 1 3-.405c1.02.005 2.045.137 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.244 2.873.12 3.176.77.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.096.81 2.215 0 1.6-.015 2.887-.015 3.28 0 .315.19.69.8.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
         </svg>
         GitHub
       </a>
       <a href="https://linkedin.com/in/karunesh-sehgal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <!-- LinkedIn SVG -->
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M20.447 20.452H17.4v-5.568c0-1.33-.027-3.04-1.853-3.04-1.853 0-2.136 1.445-2.136 2.937v5.67h-3.046V9h2.927v1.561h.041c.408-.774 1.403-1.59 2.886-1.59 3.088 0 3.657 2.033 3.657 4.676v6.805zM5.337 7.433a1.766 1.766 0 1 1 0-3.533 1.766 1.766 0 0 1 0 3.533zM6.963 20.452H3.711V9h3.252v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.728v20.544C0 23.23.792 24 1.771 24h20.451c.978 0 1.778-.77 1.778-1.728V1.728C24 .774 23.203 0 22.225 0z"/>
         </svg>
@@ -367,6 +367,56 @@
     </ul>
   </section>
 
+  <section id="certifications" aria-label="Certifications">
+    <h2 class="section-title">Certifications</h2><br>
+    <div class="experience">
+      <article class="exp-card" tabindex="0" aria-label="Google Data Analytics Certificate">
+        <h3>Google Data Analytics Certificate</h3>
+        <h4>Coursera (2023)</h4>
+        <ul>
+          <li>Covered data cleaning, analysis, and visualization using SQL, R, and spreadsheets.</li>
+          <li>Completed real-world case studies and data-driven projects.</li>
+        </ul>
+      </article>
+  
+      <article class="exp-card" tabindex="0" aria-label="IBM Data Science Professional Certificate">
+        <h3>IBM Data Science Professional Certificate</h3>
+        <h4>Coursera (2024)</h4>
+        <ul>
+          <li>Gained hands-on experience with Python, Pandas, Jupyter Notebooks, and machine learning basics.</li>
+          <li>Completed end-to-end data science capstone project.</li>
+        </ul>
+      </article>
+  
+      <article class="exp-card" tabindex="0" aria-label="KPMG Data Analytics Virtual Internship">
+        <h3>KPMG Data Analytics Virtual Internship</h3>
+        <h4>Forage (2023)</h4>
+        <ul>
+          <li>Analyzed customer trends and built dashboards for stakeholder presentations.</li>
+          <li>Developed Excel models and used data-driven storytelling techniques.</li>
+        </ul>
+      </article>
+  
+      <article class="exp-card" tabindex="0" aria-label="Deloitte Australia Data Analytics Simulation">
+        <h3>Deloitte Australia Data Analytics Simulation</h3>
+        <h4>Forage (2025)</h4>
+        <ul>
+          <li>Applied data cleansing and visualization to simulate real consulting scenarios.</li>
+          <li>Presented insights using Power BI and Excel.</li>
+        </ul>
+      </article>
+  
+      <article class="exp-card" tabindex="0" aria-label="British Airways Data Science Virtual Internship">
+        <h3>British Airways Data Science Virtual Internship</h3>
+        <h4>Forage (2025)</h4>
+        <ul>
+          <li>Explored passenger data to identify customer trends and improve service strategies.</li>
+          <li>Worked with simulated datasets in Python and Excel to generate reports.</li>
+        </ul>
+      </article>
+    </div>
+  </section>  
+
   <section id="experience" aria-label="Experience">
     <h2 class="section-title">Experience</h2><br>
     <div class="experience">
@@ -387,6 +437,20 @@
           <li>Reconciled financial data across departments to improve forecast accuracy.</li>
           <li>Collaborated with finance teams on compliance and variance analysis.</li>
         </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="education" aria-label="Education">
+    <h2 class="section-title">Education</h2><br>
+    <div class="experience">
+      <article class="exp-card" tabindex="0" aria-label="MSc Risk Analytics at Queen Mary University of London">
+        <h3>MSc Risk Analytics</h3>
+        <h4>Queen Mary University of London (2024 – 2025)</h4>
+      </article>
+      <article class="exp-card" tabindex="0" aria-label="BCom Hons at University of Delhi">
+        <h3>Bachelor of Business Administration</h3>
+        <h4>GGSIP University (2021 – 2024)</h4>
       </article>
     </div>
   </section>
@@ -412,43 +476,78 @@
       </a>
     </p>
   </section>
-  
   <script>
-    // Animate skill list items on scroll
-    const skillItems = document.querySelectorAll('#skills li');
+    const pageElements = Array.from(document.querySelectorAll('section, .hero'));
+    const lastSection = document.querySelector('section:last-of-type');
+  
+    const pageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'scale(1) translateY(0)';
+        } else {
+          entry.target.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+          entry.target.style.opacity = '0.6';
+          entry.target.style.transform = 'scale(0.97) translateY(10px)';
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '-40% 0px -40% 0px',
+      threshold: 0,
+    });
+  
+    pageElements.forEach(el => {
 
-    const observer = new IntersectionObserver(entries => {
+      if (el === lastSection) {
+
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+        return;
+      }
+
+      el.style.opacity = '0.6';
+      el.style.transform = 'scale(0.97) translateY(10px)';
+      pageObserver.observe(el);
+    });
+  
+    const skillItems = document.querySelectorAll('#skills li');
+    const skillsList = document.querySelector('#skills');
+  
+    const skillObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting) {
           skillItems.forEach((item, index) => {
             setTimeout(() => {
-              item.classList.add('visible');
-            }, index * 200);
+              item.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }, index * 100);
+          });
+        } else {
+          skillItems.forEach(item => {
+            item.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+            item.style.opacity = '0.5';
+            item.style.transform = 'scale(0.97)';
           });
         }
       });
-    }, { threshold: 0.3 });
-
-    if(skillItems.length > 0) {
-      observer.observe(skillItems[0]);
-    }
-
-    // Fade-in animation for sections
-    const sections = document.querySelectorAll('section, .hero');
-    const fadeObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'none';
-        }
-      });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => {
-      section.style.opacity = '0';
-      section.style.transform = 'translateY(20px)';
-      fadeObserver.observe(section);
+    }, {
+      root: null,
+      rootMargin: '-50% 0px -50% 0px',
+      threshold: 0,
     });
+  
+    skillItems.forEach(item => {
+      item.style.opacity = '0.5';
+      item.style.transform = 'scale(0.97)';
+    });
+  
+    if (skillsList) {
+      skillObserver.observe(skillsList);
+    }
   </script>
-</body>
+  
+  </body>
 </html>
