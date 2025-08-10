@@ -549,10 +549,22 @@
     if (skillsList) {
       skillObserver.observe(skillsList);
     }
+    document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault(); // Prevent default link behavior (no URL change)
+    const targetId = link.getAttribute('data-target');
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
   </script>
   
   </body>
 </html>
+
 
 
 
