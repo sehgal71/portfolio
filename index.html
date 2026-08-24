@@ -195,6 +195,22 @@
       letter-spacing: 0.1em;
       margin-bottom: 1rem;
     }
+    .proj-card.flagship {
+      grid-column: 1 / -1;
+      background: var(--bg3);
+    }
+    .proj-card.flagship .proj-num { color: var(--amber); }
+    .proj-card.flagship h3 { font-size: 1.5rem; }
+    .flagship-badge {
+      display:inline-block;
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--bg);
+      background: var(--amber);
+      padding: 2px 8px;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
     .proj-card h3 {
       font-family: var(--serif);
       font-size: 1.25rem;
@@ -366,7 +382,7 @@
     <div class="hero-subtitle">MSc RISK ANALYTICS · QUEEN MARY UNIVERSITY OF LONDON - 2025</div>
     <p class="hero-bio">
       Risk and data analytics graduate with experience in operational risk oversight, 2LoD control testing, KRI monitoring and governance reporting, gained at Bharat Heavy Electricals Ltd. Alongside this, I work extensively with data, building SQL pipelines, Power BI dashboards and predictive models that turn risk data into actionable governance intelligence.<br>
-MSc in Risk Analytics graduate from Queen Mary University of London. My dissertation applies machine learning to cybersecurity risk detection, developing a risk-based financial framework to quantify detection costs and optimise resource allocation across threat scenarios.<br>
+MSc in Risk Analytics graduate from Queen Mary University of London. My dissertation applies machine learning to cybersecurity risk detection, developing a risk-based financial framework to assess detection costs and potential losses across threat scenarios.<br>
 Open to operational risk, risk analytics and data analyst roles in financial services and insurance.
     </p>
     <div class="hero-links">
@@ -392,37 +408,37 @@ Open to operational risk, risk analytics and data analyst roles in financial ser
       <div class="skill-group">
         <div class="skill-group-label">Risk & Governance</div>
         <div class="skill-pills">
-          <span class="pill">2LoD Oversight</span><span class="pill">COSO 2013</span><span class="pill">ISO 31000</span><span class="pill">KRI Monitoring</span><span class="pill">Control Testing (TOD/TOE)</span><span class="pill">RCSA</span><span class="pill">Governance Escalation</span>
+          <span class="pill">2LoD Oversight</span><span class="pill">COSO 2013</span><span class="pill">RCSA</span><span class="pill">Control Testing (TOD/TOE)</span><span class="pill">KRI Monitoring</span><span class="pill">Governance Escalation</span>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-label">Programming</div>
         <div class="skill-pills">
-          <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Git</span><span class="pill">Pandas</span><span class="pill">NumPy</span><span class="pill">Scikit-learn</span>
+          <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Pandas</span><span class="pill">NumPy</span>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-label">Tools & Platforms</div>
         <div class="skill-pills">
-          <span class="pill">Power BI</span><span class="pill">Tableau</span><span class="pill">Excel</span><span class="pill">AWS (S3, Athena)</span><span class="pill">JIRA</span><span class="pill">Power Query</span>
+          <span class="pill">Power BI</span><span class="pill">Excel</span><span class="pill">Power Query</span>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-label">Analytics & Modelling</div>
         <div class="skill-pills">
-          <span class="pill">Predictive Modelling</span><span class="pill">Feature Engineering</span><span class="pill">Risk Quantification</span><span class="pill">XGBoost</span><span class="pill">Logistic Regression</span><span class="pill">Anomaly Detection</span>
+          <span class="pill">Monte Carlo Simulation</span><span class="pill">Scenario Analysis</span><span class="pill">Predictive Modelling</span><span class="pill">Regression & ANOVA</span>
         </div>
       </div>
       <div class="skill-group">
-        <div class="skill-group-label">Data Engineering</div>
+        <div class="skill-group-label">Data Modelling</div>
         <div class="skill-pills">
-          <span class="pill">ETL Pipelines</span><span class="pill">Data Modelling</span><span class="pill">Star Schema</span><span class="pill">DAX</span><span class="pill">Data Cleaning</span>
+          <span class="pill">Star Schema</span><span class="pill">DAX</span><span class="pill">Data Cleaning</span><span class="pill">Dashboard Design</span>
         </div>
       </div>
       <div class="skill-group">
-        <div class="skill-group-label">Risk Analysis</div>
+        <div class="skill-group-label">Risk Reporting</div>
         <div class="skill-pills">
-          <span class="pill">Incident Analysis</span><span class="pill">Risk MI Production</span><span class="pill">Scenario Analysis</span><span class="pill">Loss Impact Frameworks</span><span class="pill">Trend Analysis</span>
+          <span class="pill">Risk MI Production</span><span class="pill">Loss Impact Frameworks</span><span class="pill">Trend Analysis</span><span class="pill">Committee Papers</span>
         </div>
       </div>
     </div>
@@ -434,27 +450,36 @@ Open to operational risk, risk analytics and data analyst roles in financial ser
     <h2 class="section-title reveal">Selected Work</h2>
     <div class="projects-grid reveal">
 
-      <div class="proj-card" onclick="window.open('https://github.com/sehgal71/AI-Credit-Risk-Portfolio-Analysis','_blank')">
-        <div class="proj-num">01 — RISK ANALYTICS · MODELLING</div>
-        <h3>Credit Risk Probability Modelling & Loss Impact Quantification</h3>
-        <p>Developed probability-based credit risk model using statistical techniques (ROC-AUC 0.73) to assess risk severity and financial impact. Created loss impact framework demonstrating how risk classification translates to financial outcomes and control effectiveness.</p>
+      <div class="proj-card flagship">
+        <div class="proj-num">01 — OPERATIONAL RISK · GOVERNANCE</div>
+        <h3>TSB 2018 Technology Migration Failure: Operational Risk Case Study</h3>
+        <p>Analysed the control and governance failures behind the TSB 2018 IT migration, mapping regulatory findings to COSO 2013, the operational risk event taxonomy and UK regulatory expectations for management, control and operational resilience. Performed a structured RCSA, Test of Design and Test of Effectiveness assessment, and a Three Lines of Defence review, identifying key control weaknesses and residual risk exposures. Built a Python Monte Carlo scenario model calibrated to the confirmed £378.65m outturn (£48.65m FCA fine plus £330m remediation) and an interactive Power BI KRI dashboard, then produced a simulated Risk Committee paper for senior stakeholders.</p>
         <div class="proj-tags">
-          <span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Logistic Regression</span><span class="tag">Risk Modelling</span><span class="tag">Loss Quantification</span>
+          <span class="tag">COSO 2013</span><span class="tag">RCSA</span><span class="tag">2LoD</span><span class="tag">Python</span><span class="tag">Monte Carlo</span><span class="tag">Power BI</span><span class="tag">Committee Reporting</span>
+        </div>
+      </div>
+
+      <div class="proj-card" onclick="window.open('https://github.com/sehgal71/AI-Credit-Risk-Portfolio-Analysis','_blank')">
+        <div class="proj-num">02 — RISK ANALYTICS · MODELLING</div>
+        <h3>Credit Risk Probability Modelling & Loss Impact Quantification</h3>
+        <p>Built a logistic regression model to classify credit risk severity, then developed a loss impact framework showing how risk classification translates into financial outcomes and control effectiveness, benchmarked against baseline classification metrics.</p>
+        <div class="proj-tags">
+          <span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Logistic Regression</span><span class="tag">Loss Quantification</span>
         </div><br>
         <a class="proj-link" href="https://github.com/sehgal71/AI-Credit-Risk-Portfolio-Analysis" target="_blank">VIEW →</a>
       </div>
 
       <div class="proj-card">
-        <div class="proj-num">02 — DISSERTATION · AI RISK</div>
+        <div class="proj-num">03 — DISSERTATION · AI RISK</div>
         <h3>Cybersecurity Risk Detection & Financial Impact Assessment</h3>
-        <p>Engineered predictive risk detection model achieving 96% accuracy through advanced statistical modelling and feature engineering. Developed governance framework ensuring transparent use of predictive analytics. Created risk quantification framework reducing projected loss from $25.3M to $0.47M.</p>
+        <p>Developed a predictive model to identify elevated-risk cybersecurity events, supporting risk-based prioritisation of threat scenarios. Designed a financial-impact framework to assess detection costs and potential losses across different cybersecurity risk scenarios, with a governance layer for transparent use of the model's outputs.</p>
         <div class="proj-tags">
           <span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">Risk Governance</span><span class="tag">Feature Engineering</span>
         </div>
       </div>
 
       <div class="proj-card" onclick="window.open('https://github.com/Carlton756/RDAMP_LMS_Analytics_RCHG','_blank')">
-        <div class="proj-num">03 — BUSINESS INTELLIGENCE</div>
+        <div class="proj-num">04 — BUSINESS INTELLIGENCE</div>
         <h3>RCHG LMS Analytics Dashboard</h3>
         <p>Data-driven analytics platform for staff training compliance and performance tracking. Built dimensional models and interactive dashboards for operational reporting and governance visibility.</p>
         <div class="proj-tags">
@@ -464,7 +489,7 @@ Open to operational risk, risk analytics and data analyst roles in financial ser
       </div>
 
       <div class="proj-card" onclick="window.open('https://github.com/sehgal71/RDAMP-Dimensional-Model-PowerBI','_blank')">
-        <div class="proj-num">04 — DATA MODELLING</div>
+        <div class="proj-num">05 — DATA MODELLING</div>
         <h3>Ace Superstore Sales Analytics</h3>
         <p>Designed a full star schema dimensional data model and built interactive Power BI dashboards for business intelligence reporting on sales performance, product trends and regional breakdowns.</p>
         <div class="proj-tags">
@@ -485,7 +510,7 @@ Open to operational risk, risk analytics and data analyst roles in financial ser
 
       <div class="exp-item">
         <div class="exp-header">
-          <div class="exp-role">Financial Analyst Intern</div>
+          <div class="exp-role">Risk & Controls Analyst Intern</div>
           <div class="exp-date">APR – SEP 2023</div>
         </div>
         <div class="exp-company">BHARAT HEAVY ELECTRICALS LTD · NOIDA, INDIA</div>
@@ -530,14 +555,6 @@ Open to operational risk, risk analytics and data analyst roles in financial ser
       <div class="cert-card">
         <div class="cert-issuer">IBM · Coursera</div>
         <div class="cert-name">Data Science Professional Certificate</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-issuer">Google · Coursera</div>
-        <div class="cert-name">Data Analytics Certificate</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-issuer">KPMG · Forage</div>
-        <div class="cert-name">Data Analytics Virtual Internship</div>
       </div>
     </div>
   </section>
